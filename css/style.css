@@ -18,6 +18,25 @@ a {
     max-width: 1080px;
     margin: auto;
 }
+.text-highlighted {
+    color: coral;
+}
+p {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.btn {
+    display: block;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px 5px;
+    background-color: coral;
+}
+.btn:hover {
+    background-color: azure;
+}
 /* ---- Navigation ---- */
 #main-nav{
     background-color: #3A3A3A;
@@ -51,5 +70,34 @@ a {
 #main-nav ul li a:hover {
     background-color: coral;
     color: white;
-
+}
+/* -- Welcome Section -- */
+#welcome {
+    min-height: 505px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/wave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#welcome:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+#welcome .welcome-content {
+    padding: 130px 50px;
+    color: white;
+    width: 70%;
+    float: right;
+}
+#welcome .welcome-img {
+    float: left;
+    width: 30%;
+    padding-top: 1%;
+}
+#welcome .welcome-img img{
+     width: 100%;
+     border-radius: 50%;
+} 
+#welcome .welcome-content h2{
+    font-size: 40px;
 }
